@@ -1,0 +1,23 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "friend finder homework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkinsk/friendFinder.git"
+  },
+  "author": "scz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zkinsk/friendFinder/issues"
+  },
+  "homepage": "https://github.com/zkinsk/friendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
