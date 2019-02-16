@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Friend Finder Survey</title>
+  <title>FF Survey</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="assets/js/main.js"></script>
 </head>
 <body>
   <div class="container">
@@ -14,34 +13,25 @@
       <h1>Hello to my Friend Finder Survey!</h1>
       <a href="/">Home!</a>
     </div>
-    
+    <div id="aboutBox">
+      <div class="row">
+        <div class="col-12">
+          <h3><strong>We need a bit of your info: </strong></h3>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id = "userName" placeholder="Name (required)">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id = "userImg" placeholder="Photo Link (required)">
+        </div>
+      </div>
+    </div>
     <br>
-    <form class="form">
-        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
-        <select class="custom-select my-1" id="quest0">
-          <option selected>Choose...</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-          <option value="4">Four</option>
-          <option value="5">Five</option>
-        </select>
-        <br>
-        <select class="custom-select my-1" id="quest1">
-            <option selected>Choose...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-            <option value="4">Four</option>
-            <option value="5">Five</option>
-          </select>
-        <button type="submit" class="btn btn-primary my-1">Submit</button>
-      </form>
-      
-
-
-
-
+    <br>
+    <div id = "surveyBox"></div>
+    <div id = "buttonBox">
+      <button type="button" class="btn btn-primary" id="submitButton">Submit for friend finding!</button>
+    </div>
   </div><!--Container End-->
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
