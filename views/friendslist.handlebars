@@ -1,0 +1,13 @@
+<ul>
+  {{#each friends}}
+  <li>
+    <p>
+      {{this.name}}
+      <button data-planid="" class="delplan">Delete This Person!</button>
+    </p>
+    <img src="{{{this.photo}}}"></img>
+  </li>
+  {{/each}}
+</ul>
+
+{{!-- <h1>Testing Handlebars</h1> --}}

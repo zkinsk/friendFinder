@@ -6,7 +6,7 @@ h1 {
 /* modal css */
 
 #foundFriends .modal-title {
-  margin: 10px auto;
+  margin-top: 10px;
   text-align: center;
   color: red;
 }
@@ -15,7 +15,16 @@ h1 {
   max-width: 100%;
 }
 
-
 /* end modal css */
+
+/* footer */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  height: 100px;
+}
+
+/* end footer */
 
 
