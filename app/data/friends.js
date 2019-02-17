@@ -3,7 +3,7 @@ friendsObj = {
     {
       name: "Bob Frank",
       photo: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/41db0511-770f-471c-98d4-9197b0b97009/dbms9q0-5ecac734-cdff-4123-896e-d2e3866eb860.jpg/v1/fill/w_800,h_528,q_70,strp/bob__frank_silva__twin_peaks_by_traku8_dbms9q0-fullview.jpg",
-      ansArr: [3,2,6,4,5,1,2,5,4,1],
+      ansArr: [3,3,3,3,3,3,3,3,3,3],
     },
     {
       name:"Ahmed",
@@ -11,14 +11,14 @@ friendsObj = {
       ansArr:[5,1,4,4,5,1,2,5,4,1]
     },
     {
-      name:"Ahmed",
-      photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-      ansArr:[5,1,3,4,1,2,2,5,4,1]
+      name:"A Rock",
+      photo:"https://media.boingboing.net/wp-content/uploads/2017/08/Pet_rock.jpg",
+      ansArr:[1,5,5,5,5,5,3,5,1,1]
     },
     {
-      name:"Ahmed",
-      photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-      ansArr:[5,1,3,4,1,2,2,5,4,1]
+      name:"Bob Ross",
+      photo:"https://i.ytimg.com/vi/LLtnuwplw1A/maxresdefault.jpg",
+      ansArr:[5,1,5,1,5,1,1,1,5,5]
     },
   ],
   survCompare: function(newSurv){
@@ -35,7 +35,7 @@ friendsObj = {
     compareArr = compareArr.sort(function(a,b){
       return(a.diff - b.diff);
     })
-    console.log("comp Arr: ", compareArr);
+    // console.log("comp Arr: ", compareArr);
     return this.friendsArr[compareArr[0].id];
     // return compareArr[0];
   }

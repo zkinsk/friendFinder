@@ -8,11 +8,9 @@ var friends = require("../data/friends")
 
 const apiRoutes = (app) => {
     app.post('/api/survey',  (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     let urBuddy = friends.survCompare(req.body.ansArr)
-    // console.log("Buddy: ", urBuddy);
     friends.friendsArr.push(req.body)
-    // console.log(friends.friendsArr);
     res.json({friend: urBuddy});
   })
 }//end of module exports

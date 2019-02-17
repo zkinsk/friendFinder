@@ -90,7 +90,11 @@ const postResults = (questionairResponse) => {
     // console.log(response.body);
     // console.log(response.text);
     console.log(response);
-    $('#myModal').modal('show');
+    let friendName = response.friend.name;
+    let imgTag = response.friend.photo;
+    $('#foundFriends .modal-title').text(`${friendName} is your best match!`)
+    $('#foundFriends img').attr('src', imgTag)
+    $('#foundFriends').modal('show');
   });
 }
 
@@ -98,4 +102,5 @@ const postResults = (questionairResponse) => {
 $(document).ready(function(){
   // alert("loaded")
   drawQuestions()
+  $('#foundFriends').modal('show');
 });//end of doc.ready
