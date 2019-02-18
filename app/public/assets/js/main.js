@@ -38,9 +38,12 @@ const buttonSubmit  = () => {
       alert("Complete Form!")
     }else{
       // alert('Good job!')
+      let slug = $('#userName').val().trim();
+      slug = (slug.replace(/\s/g,"")).toLowerCase();
       let questionairResponse = {}
       questionairResponse.name = $('#userName').val().trim();
       questionairResponse.photo = $('#userImg').val().trim();
+      questionairResponse.slug = slug;
       questionairResponse.ansArr = ansArr;
       postResults(questionairResponse);
     }

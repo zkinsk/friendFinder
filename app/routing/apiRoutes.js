@@ -8,7 +8,6 @@ var questionArr = require("../data/surveyquestions")
 // app.use(express.json());
 
 const apiRoutes = (app) => {
-  console.log('api routes')
   app.post('/api/survey',  (req, res) => {
     // console.log(req.body);
     let urBuddy = friends.survCompare(req.body.ansArr)
@@ -22,18 +21,20 @@ const apiRoutes = (app) => {
     res.json(friends.friendsArr);
   });
 
-  app.get('/api/friendslist/hb', (req, res) => {
-    console.log("friends list hit");
-    // console.log(res);
-    // res.json(friends.friendsArr);
-    res.render("friendslist", {title: "Friends List", friends: friends.friendsArr});
-  });
 
   app.get('/api/questionlist', (req, res) => {
     console.log("question list hit");
     // console.log(res);
     res.json({questionArr: questionArr});
   })
+
+  app.delete('/api/reset', (req, res) => {
+    if (friends.friendsArr.length > 4){
+      friends.friendsArr.splice(4);
+      console.log()
+      res.send(true);
+    };
+  });
   
 
 }//end of module exports
