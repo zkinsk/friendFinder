@@ -32,7 +32,17 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Hello to my Friend Finder Survey!</h1>
-        <a href="/">Home!</a>
+        <hr class="my-4">
+        <div class="btn-group">
+          <a class="btn btn-danger" role="button" href="/">Home</a>
+          <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="/api/friendslist/hb">Friends List</a>
+              <a class="dropdown-item" href="/api/friendslist">List No Handlebars</a>
+          </div>
+        </div>
       </div>
       <div id="aboutBox">
         <div class="row">
@@ -53,7 +63,7 @@
       <div id="buttonBox">
         <button type="button" class="btn btn-primary" id="submitButton">Submit for friend finding!</button>
       </div>
-    </div>
+    
     <footer class="footer">
       <h2>Thanks for taking the Survey!</h2>
     </footer>
