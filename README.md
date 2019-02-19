@@ -1,4 +1,5 @@
-# Friend Finder - U of R Coding BootCamp - Full Stack Application
+# Friend Finder 
+# U of R Coding BootCamp - Full Stack Application
 **A basic survey app that takes in a users answers to 10 questions.  It then compares those answers to people already in the data base.  Finally it returns a match to the person who most similarly answered the same questions.**
 
 ### Technologies Involved: 
