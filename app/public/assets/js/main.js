@@ -11,7 +11,7 @@ const drawQuestions = () => {
         let quest = `<h5>${quesObj.name}</h5>`
         let questOptions = /*html*/`
           <select class="chosen-select" id="q${qNum}">
-            <option value=""></option>
+            <option value="">Choose One</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>

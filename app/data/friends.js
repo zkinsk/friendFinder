@@ -24,18 +24,6 @@ friendsObj = {
       photo:"https://i.ytimg.com/vi/LLtnuwplw1A/maxresdefault.jpg",
       ansArr:[5,1,5,1,5,1,1,1,5,5]
     },
-    {
-      name:"Bob Ross",
-      slug:"bobross",
-      photo:"https://i.ytimg.com/vi/LLtnuwplw1A/maxresdefault.jpg",
-      ansArr:[5,1,5,1,5,1,1,1,5,5]
-    },
-    {
-      name:"Bob Ross",
-      slug:"bobross",
-      photo:"https://i.ytimg.com/vi/LLtnuwplw1A/maxresdefault.jpg",
-      ansArr:[5,1,5,1,5,1,1,1,5,5]
-    },
   ],
   survCompare: function(newSurv){
     let compareArr = []
