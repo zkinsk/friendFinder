@@ -14,23 +14,17 @@
     <div class="card">
       <div class="card-header" id="headingOne">
         <h2 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{this.slug}}" aria-expanded="false" aria-controls="collapseOne">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{this.slug}}{{@index}}" aria-expanded="false" aria-controls="collapseOne">
             Survey Responses:
           </button>
         </h2>
       </div>
-      <div id="{{this.slug}}" class="collapsed collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div id="{{this.slug}}{{@index}}" class="collapsed collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
-          <p>Ans: {{this.ansArr}}</p>
           {{#each ../question}}
-            <p>#{{this.num}}: {{this.name}}</p>
-            <p>ans: {{lookup ../friends.name @../index}}</p>
+            <p>#{{this.num}}: {{this.name}} <i>ans: {{lookup ../this.ansArr @index}}</i></p>
           {{/each}}
-
-          {{#each friends.ansArr}}
-          <p>Test Code: {{lookup ../question @index}}    {{this}}</p>
-          {{/each}}
-        </div>
+        </div><!-- end car body-->
       </div>
     </div>
   </div>
@@ -39,12 +33,3 @@
   {{/each}}
 </ul>
 
-<p>Test code for array index {{friends.[0].ansArr.[1]}}</p>
-
-{{#each toIterate}}
-<div>
-  {{lookup ../someArray @index}} {{this}}
-</div>
-{{/each}}
-
-{{!-- <h1>Testing Handlebars</h1> --}}

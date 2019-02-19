@@ -95,5 +95,9 @@ footer {
 li img {
   max-width: 400px;
 }
+.card-body i {
+  color: red;
+  margin-left: 10px
+}
 
 
