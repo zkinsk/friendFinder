@@ -14,8 +14,10 @@ body {
   color: red;
 }
 
-#foundFriends img {
+.modal-body img {
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 /* end modal css */

@@ -1,4 +1,4 @@
-
+// Draw Questions populates the survey html with the list of questions returned from the get request tothe api/questionlist
 const drawQuestions = () => {
     // let questionArr = response.questionArr
     $.get('/api/questionlist', (data) => {
@@ -27,6 +27,8 @@ const drawQuestions = () => {
 
 };// end of drawQuestion fn
 
+// This function button click gathers all info from survey form - validates it - and if it checks out sends to the api for compairson to
+// friends in current firends obj
 const buttonSubmit  = () => {
   $('#submitButton').click(function(){
     let ansArr = []
@@ -35,7 +37,9 @@ const buttonSubmit  = () => {
     })
     let valid = formValidate(ansArr);
     if (!valid){
-      alert("Complete Form!")
+      $('#foundFriends .modal-title').text(`Please fill out the form completely!`)
+      $('#foundFriends img').attr('src', 'assets/images/finishit.gif' )
+      $('#foundFriends').modal('show');
     }else{
       // alert('Good job!')
       let slug = $('#userName').val().trim();
@@ -50,7 +54,7 @@ const buttonSubmit  = () => {
   })//end of button click 
 }//end of button fn
 
-
+// validates info from survey form - checks for empty input boxes and that every ansewer has been chosen
 const formValidate = (ansArr) => {
   let valid = ansArr.every(ans => ans !== "");
   $(".form-control").each(function(){
