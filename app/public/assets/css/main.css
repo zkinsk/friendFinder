@@ -1,6 +1,9 @@
-h1 {
-  color: blue;
+body {
+  background-color: rgb(255, 226, 172);
 }
+/* h1 {
+  color: blue;
+} */
 
 
 /* modal css */
@@ -17,11 +20,59 @@ h1 {
 
 /* end modal css */
 
+/* jumbotron sytling */
+
+.jumbotron{
+  /* height: 800px; */
+  /* background-image: url(../images/friend-panorama.jpg); */
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+/* end jumbotron */
+/* parallax styling */
+
+#pLax-1 {
+  background-image: url(../images/friend-panorama.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+#pLax-1-content {
+  height: 300px;
+  margin: 40px;
+}
+
+#pLax-1-content h1 {
+  color: red;
+  text-shadow: 1px 1px rgb(255, 226, 172);
+  padding: 120px 10px 20px 0;
+}
+
+/* end parallax styling */
+
+
 /* index sheet */
 #indexContent{
-  height: 800px;
-  background-image: url ("/assets/images/friend-group.jpg");
-  background-color: #e9ecef;
+  /* height: 100px; */
+
+  /* background-image: url(../images/friend-group.jpg); */
+  /* background-attachment: fixed; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgb(252, 213, 141);
+}
+
+/* #indexContent img {
+  height: auto;
+  width: 50%;
+} */
+
+.carousel-inner{
+  width: 50%;
+  margin: auto;
+  height: 400px;
 }
 
 
@@ -34,7 +85,7 @@ footer {
   padding: 30px;
   margin-top: 30px;
   min-height: 100px;
-  background-color: #e9ecef;
+  background-color: rgb(252, 213, 141);
 }
 
 
