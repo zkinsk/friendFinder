@@ -38,7 +38,7 @@ body {
 #pLax-1-content h1 {
   color: red;
   text-shadow: 1px 1px rgb(255, 226, 172);
-  padding: 120px 0px 0px 0;
+  padding-top: 120px;
 }
 
 /* end parallax styling */
@@ -112,6 +112,13 @@ li img {
   }
   .chosen-select{
     color: darkgoldenrod;
+  }
+  #pLax-1-content {
+    height: 150px;
+    margin: 0;
+  }
+  #pLax-1-content h1 {
+    padding-top: 20px;
   }
 }
 
