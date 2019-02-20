@@ -22,17 +22,6 @@ body {
 
 /* end modal css */
 
-/* jumbotron sytling */
-
-.jumbotron{
-  /* height: 800px; */
-  /* background-image: url(../images/friend-panorama.jpg); */
-  /* background-attachment: fixed; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-}
-
-/* end jumbotron */
 /* parallax styling */
 
 #pLax-1 {
@@ -42,14 +31,14 @@ body {
   background-size: contain;
   }
 #pLax-1-content {
-  height: 300px;
-  margin: 40px;
+  height: 250px;
+  margin: 40px 0 0 0;
 }
 
 #pLax-1-content h1 {
   color: red;
   text-shadow: 1px 1px rgb(255, 226, 172);
-  padding: 120px 10px 20px 0;
+  padding: 120px 0px 0px 0;
 }
 
 /* end parallax styling */
@@ -57,40 +46,53 @@ body {
 
 /* index sheet */
 #indexContent{
-  /* height: 100px; */
-
-  /* background-image: url(../images/friend-group.jpg); */
-  /* background-attachment: fixed; */
-  /* background-repeat: no-repeat;
-  background-size: cover; */
+  border-top: red solid 2px;
   background-color: rgb(252, 213, 141);
 }
 
-/* #indexContent img {
-  height: auto;
-  width: 50%;
-} */
 
 .carousel-inner{
-  width: 50%;
-  margin: auto;
-  height: 450px;
+  /* width: 100%; */
+  /* margin: auto; */
+  /* height: 350px; */
 }
 
 
 /* end index sheet */
 
+/* survey page */
+  #aboutBox {
+    border-top: red solid 2px;
+  }
+
+  #aboutBox:after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 90%; 
+    padding-top: 20px; 
+    border-bottom: 1px solid lightsalmon; 
+  }
+
+  .row{
+    background-color: rgb(252, 213, 141);
+  }
+/* survey page end */
+
 /* footer */
 
-footer {
-  text-align: center;
-  padding: 30px;
-  margin-top: 30px;
-  min-height: 100px;
-  background-color: rgb(252, 213, 141);
-}
+  footer {
+    border-top: red solid 2px;
+    text-align: center;
+    padding: 30px;
+    /* margin-top: 30px; */
+    min-height: 100px;
+    background-color: rgb(252, 213, 141);
+  }
 
-
+  footer h2 {
+    color: red;
+  }
 /* end footer */
 
 /* friends handlebars styling */
@@ -101,5 +103,15 @@ li img {
   color: red;
   margin-left: 10px
 }
+/* edn handlebars */
 
+/* media queries */
+@media only screen and (max-width: 800px) {
+  #indexContent, #aboutBox {
+    border-top: none;
+  }
+  .chosen-select{
+    color: darkgoldenrod;
+  }
+}
 

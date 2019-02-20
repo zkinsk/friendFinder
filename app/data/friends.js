@@ -4,7 +4,7 @@ friendsObj = {
       name: "Bob Frank",
       slug: "bobfrank",
       photo: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/41db0511-770f-471c-98d4-9197b0b97009/dbms9q0-5ecac734-cdff-4123-896e-d2e3866eb860.jpg/v1/fill/w_800,h_528,q_70,strp/bob__frank_silva__twin_peaks_by_traku8_dbms9q0-fullview.jpg",
-      ansArr: [3,3,3,3,3,3,3,3,3,3],
+      ansArr: [1,1,1,1,5,5,4,2,3,5],
     },
     {
       name:"Ahmed",

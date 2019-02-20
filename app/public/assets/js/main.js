@@ -6,7 +6,7 @@ const drawQuestions = () => {
       let questionArr = data.questionArr;
       questionArr.forEach(function(quesObj, index){
         let qNum = index + 1;
-        let questDiv = $("<div>")
+        let questDiv = $(`<div class='col-12'>`)
         let quesTitle = `<h4><strong>Question ${qNum}</strong></h4>`
         let quest = `<h5>${quesObj.name}</h5>`
         let questOptions = /*html*/`
@@ -37,9 +37,11 @@ const buttonSubmit  = () => {
     })
     let valid = formValidate(ansArr);
     if (!valid){
-      $('#foundFriends .modal-title').text(`Please fill out the form completely!`)
-      $('#foundFriends img').attr('src', 'assets/images/finishit.gif' )
-      $('#foundFriends').modal('show');
+      $('#foundFriends .modal-title').text(`Please fill out the form completely!`);
+      $('#foundFriends img').attr('src', 'assets/images/finishit.gif' );
+      setTimeout(function(){
+        $('#foundFriends').modal('show');
+      }, 100)
     }else{
       // alert('Good job!')
       let slug = $('#userName').val().trim();
@@ -74,7 +76,9 @@ const postResults = (questionairResponse) => {
     let imgTag = response.friend.photo;
     $('#foundFriends .modal-title').text(`${friendName} is your best match!`)
     $('#foundFriends img').attr('src', imgTag)
-    $('#foundFriends').modal('show');
+    setTimeout(function(){
+      $('#foundFriends').modal('show');
+    }, 100)
   });
 }
 

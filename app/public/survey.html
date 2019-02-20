@@ -30,8 +30,8 @@
     </div>
     <!--end modal-->
     <div class="container">
-      <div id="pLax-1">
-        <div id="pLax-1-content">
+      <div id="pLax-1" class="row">
+        <div id="pLax-1-content" class="col-12">
           <h1>Hello to my Friend Finder Survey!</h1>
           <div class="btn-group">
             <a class="btn btn-danger" role="button" href="/">Home</a>
@@ -48,28 +48,28 @@
         </div>
         <!--end pLaxcontent-->
       </div>
-      <div id="aboutBox">
-        <div class="row">
+      <div id="aboutBox" class = "row pt-5">
           <div class="col-12">
             <h3><strong>We need a bit of your info: </strong></h3>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6 mb-1 px-3">
             <input type="text" class="form-control" id="userName" placeholder="Name (required)">
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6">
             <input type="text" class="form-control" id="userImg" placeholder="Photo Link (required)">
           </div>
-        </div>
       </div>
-      <br>
-      <br>
-      <div id="surveyBox"></div>
-      <div id="buttonBox">
+      <div id="surveyBox" class="row px-3 pt-4">
+        <!-- content pushed into here by js & jquery -->
+      </div>
+      <div id="buttonBox" class="row px-3 pb-3">
         <button type="button" class="btn btn-primary" id="submitButton">Submit for friend finding!</button>
       </div>
     
-    <footer class="footer">
-      <h2>Thanks for taking the Survey!</h2>
+    <footer class="footer row">
+      <div class="col">
+        <h2>Thanks for taking the Survey!</h2>
+      </div>
     </footer>
     </div>
     <!-- end container -->
