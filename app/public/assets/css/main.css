@@ -95,15 +95,27 @@ body {
   }
 /* end footer */
 
-/* friends handlebars styling */
-li img {
-  max-width: 400px;
-}
-.card-body i {
-  color: red;
-  margin-left: 10px
-}
-/* edn handlebars */
+/* *****************
+friends handlebars styling 
+********************* */
+  .jumbotron {
+    background-color: rgb(252, 213, 141);
+  }
+  hr {
+    border-color: lightsalmon;
+  }
+
+  .friendsList img {
+    width: 100%;
+  }
+  .friendsList h3 {
+    text-align: center;
+  }
+  .card-body i {
+    color: red;
+    margin-left: 10px
+  }
+/* end handlebars */
 
 /* media queries */
 @media only screen and (max-width: 800px) {
@@ -118,7 +130,7 @@ li img {
     margin: 0;
   }
   #pLax-1-content h1 {
-    padding-top: 20px;
+    padding-top: 2px;
   }
 }
 
