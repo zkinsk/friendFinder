@@ -1,3 +1,7 @@
+// contains seed data for a base list of made of friends.  I also had it contain the js code for comparing the survey results with the existing 
+// array of friends. I chose to put the js here instead of the api routes.js because this seemed like the right place to perform the checks. 
+
+
 friendsObj = {
   friendsArr: [
     {
@@ -25,6 +29,8 @@ friendsObj = {
       ansArr:[5,1,5,1,5,1,1,1,5,5]
     },
   ],
+  // function that takes in the results of the current survey and copares the anwers with all other people on the list
+  //returns the closes match back to the apiRoutes js
   survCompare: function(newSurv){
     let compareArr = []
     this.friendsArr.forEach(function(frend, fNum){

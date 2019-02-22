@@ -1,3 +1,5 @@
+// list of survey quesitons that can be used by the handlebars friends page and the survey page.  This also allows for the survey questions to be changed quickly
+//to anything anyone may want
 const questionArr = [
   {
     num: 1,

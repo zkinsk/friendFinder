@@ -20,7 +20,7 @@
             data-parent="#friendsAccordian">
             <div class="card-body">
               {{#each ../question}}
-              <p>#{{this.num}}: {{this.name}} <i>ans: {{lookup ../this.ansArr @index}}</i></p>
+              <p>#{{this.num}}: {{this.name}} <i>ans: {{lookup ../this.ansArr @index}}</i></p> <!-- this line of code took me forever to figure out.  The double "this" took forever to dawn on me that it would work-->
               {{/each}}
             </div><!-- end car body-->
           </div>

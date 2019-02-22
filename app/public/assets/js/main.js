@@ -1,4 +1,7 @@
+//I didn't want to put much code in the HTML files, so  most of the client side javascript is here
+
 // Draw Questions populates the survey html with the list of questions returned from the get request tothe api/questionlist
+//This really seems like it should have been done with handlebars it would have been easy
 const drawQuestions = () => {
     // let questionArr = response.questionArr
     $.get('/api/questionlist', (data) => {
@@ -67,6 +70,8 @@ const formValidate = (ansArr) => {
   return valid
 }//end of form validate
 
+//sends the users survey results to the api and once the api compares the data base of freinds, 
+// the server returns the closest match and this function pushes  those results into the modal then opens the  modal
 const postResults = (questionairResponse) => {
   $.post("/api/survey", questionairResponse, function(response){
     // console.log(response.body);
